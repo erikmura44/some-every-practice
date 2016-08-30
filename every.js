@@ -41,7 +41,7 @@ function positiveMatrix (input) {
 // and that they all only contain the same vowels.
 
 function allSameVowels (input) {
-  return input.every (function(input){
+  return input.every(function(str) {
     return typeof str === 'string';
   });
-};
+}
