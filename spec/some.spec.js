@@ -1,7 +1,7 @@
 var myCode = require('../some');
 
 describe('myCode', function () {
-  xit('#anyGreaterThan10', function () {
+  it('#anyGreaterThan10', function () {
     var goodInput = [8,9,10,11];
     expect(myCode.anyGreaterThan10(goodInput)).toBe(true);
 
@@ -9,7 +9,7 @@ describe('myCode', function () {
     expect(myCode.anyGreaterThan10(badInput)).toBe(false);
   });
 
-  xit('#longWord', function () {
+  it('#longWord', function () {
     var goodInput = ['democracy', 'aristocracy'];
     expect(myCode.longWord(goodInput)).toBe(true);
 
@@ -17,7 +17,7 @@ describe('myCode', function () {
     expect(myCode.longWord(badInput)).toBe(false);
   });
 
-  xit('#truePossibilities', function () {
+  it('#truePossibilities', function () {
     var goodInput = [[false,false,false],
                      [false,false,false],
                      [false,false,true]];
@@ -29,7 +29,7 @@ describe('myCode', function () {
     expect(myCode.truePossibilities(badInput)).toBe(false);
   });
 
-  xit('#lostCarcosa', function () {
+  it('#lostCarcosa', function () {
     var goodInput = ['Strange is the night where black stars rise,',
                      'And strange moons circle through the skies,',
                      'But stranger still is',
